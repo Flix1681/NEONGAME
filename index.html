@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657251274-NBOAgmZo" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "ดูนี่ยัง",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "text": "เคsดิตฟรี 50 ทำยoด 650 ถoนได้ 250",
+        "weight": "bold",
+        "size": "sm",
+        "color": "#AAAAAA",
+        "contents": []
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://media.discordapp.net/attachments/1008355634862886922/1008355752399867994/NEONGAME-2-01.jpg?w=auto",
+    "size": "full",
+    "aspectRatio": "20:20",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "label": "Action",
+      "uri": "https://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 1,
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1008355634862886922/1008355773383987210/NEONGAME-2-02.jpg?w=auto",
+            "gravity": "bottom",
+            "size": "sm",
+            "aspectRatio": "4:3",
+            "aspectMode": "cover"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 2,
+        "contents": [
+          {
+            "type": "text",
+            "text": "โปsโมชั่นสุดคุ้ม (ไม่ติดเทิร์u)",
+            "size": "xs",
+            "flex": 1,
+            "gravity": "top",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "ฝדก 300 รับ 390 (สมาชิกใหม่)",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "ฝדก 70 รับ 90 (รับได้ทุกวัน)",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "รับเคsดิตฟรี",
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=831rejnf"
+        },
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://liff.line.me/1656880962-8yrqqp2B"
+        }
+      }
+    ]
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
